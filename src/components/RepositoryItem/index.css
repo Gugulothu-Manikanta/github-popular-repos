@@ -1,29 +1,62 @@
-.repo-container {
+
+.repo-item {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 100%;
+  margin-bottom: 8px;
   background-color: #f8f8ff;
-  border-radius: 10px;
-  min-width: 30%;
-  margin: 10px;
-  padding: 15px;
+  padding: 24px;
+  border-radius: 24px;
+}
+@media screen and (min-width: 576px){
+    .repo-item{
+        width: 45%;
+    }
+}
+@media screen and (min-width: 992px){
+    .repo-item{
+        width: 30%;
+    }
+}
+@media screen and (min-width: 1200px){
+    .repo-item{
+        width: 23%;
+    }
+}
+.avatar-image {
+  width: 92px;
+  height: 92px;
+  margin-bottom: 8px;
 }
 
-.icon-and-text-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  font-family: 'Roboto';
-}
-
-.icons-size {
-  height: 30px;
-  width: 30px;
-}
-
-.repo-title {
-  font-family: 'Roboto';
+.repo-name {
   color: #e73959;
+  font-family: 'Roboto';
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.stats-container {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 15px;
+  width: 85%;
+}
+.stat-icons {
+  width: 16px;
+  height: 16px;
+}
+.stat-text {
+  font-family: 'Roboto';
+  color: #0f172a;
+  font-weight: 500;
+  margin: 0;
+  font-size: 16px;
+}
+
+*{
+    /* border: 1px solid red; */
 }

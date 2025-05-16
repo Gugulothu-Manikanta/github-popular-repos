@@ -1,43 +1,66 @@
-.popular-gitrepo-container {
+
+.app-container {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  width: 80%;
+  max-width: 1140px;
+  margin: auto;
 }
-.list-items {
-  list-style-type: none;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  flex-wrap: wrap;
-}
-
-.main-heading {
-  color: #0f172a;
+.app-heading {
   font-family: 'Lobster';
+  font-size: 48px;
 }
 
-.list-of-repos-item-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  flex-wrap: wrap;
+.language-filters-list {
+  padding-left: 0;
   list-style-type: none;
-  padding: 5px;
-  margin: 5px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
-
-@media screen and (mix-width: 767px) {
-  .list-of-repos-item-container {
-    flex-direction: column;
+@media screen and (min-width: 768px){
+    .language-filters-list{
+        margin-bottom: 40px;
+        margin-top: 35px;
+    }
+}
+.repos-list {
+  padding-left: 0;
+  list-style-type: none;
+  display: flex;
+  /* justify-content: center; */
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-top: 20px;
+}
+@media screen and (min-width: 768px) {
+  .repos-list {
   }
 }
 
-.failure-page {
+.failure-view-container {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+}
+.failure-view-image {
+  width: 80%;
+  max-width: 600px;
+}
+.failure-view-heading {
+  color: #1e293b;
+  font-family: 'bree serif';
+  font-size: 28px;
+}
+@media screen and (min-width: 768px){
+    .failure-view-heading{
+        font-size: 32px;
+    }
+}
+* {
+  /* border: 1px solid red; */
 }

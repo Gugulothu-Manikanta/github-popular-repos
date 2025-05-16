@@ -1,36 +1,30 @@
 import './index.css'
 
+const STARS_ICON =
+  'https://assets.ccbp.in/frontend/react-js/stars-count-img.png'
+const FORKS_ICON =
+  'https://assets.ccbp.in/frontend/react-js/forks-count-img.png'
+const OPEN_ISSUES_ICON =
+  'https://assets.ccbp.in/frontend/react-js/issues-count-img.png'
+
 const RepositoryItem = props => {
-  const {eachLanguageRepoData} = props
-  const {avatarUrl, forksCount, issuesCount, starsCount, name} =
-    eachLanguageRepoData
+  const {repoData} = props
+  const {name, issuesCount, forksCount, starsCount, avatarUrl} = repoData
   return (
-    <li className="repo-container">
-      <img src={avatarUrl} alt={name} height={90} width={90} />
-      <h1 className="repo-title">{name}</h1>
-      <div className="icon-and-text-container">
-        <img
-          src="https://assets.ccbp.in/frontend/react-js/stars-count-img.png"
-          alt="stars"
-          className="icons-size"
-        />
-        <p> {starsCount} stars</p>
+    <li className="repo-item">
+      <img src={avatarUrl} alt={name} className="avatar-image" />
+      <h1 className="repo-name">{name}</h1>
+      <div className="stats-container">
+        <img src={STARS_ICON} alt="stars" className="stat-icons" />
+        <p className="stat-text">{starsCount} stars</p>
       </div>
-      <div className="icon-and-text-container">
-        <img
-          src="https://assets.ccbp.in/frontend/react-js/forks-count-img.png"
-          alt="forks"
-          className="icons-size"
-        />
-        <p> {forksCount} forks</p>
+      <div className="stats-container">
+        <img src={FORKS_ICON} alt="forks" className="stat-icons" />
+        <p className="stat-text">{forksCount} forks</p>
       </div>
-      <div className="icon-and-text-container">
-        <img
-          src="https://assets.ccbp.in/frontend/react-js/issues-count-img.png"
-          alt="open issues"
-          className="icons-size"
-        />
-        <p> {issuesCount} open issues</p>
+      <div className="stats-container">
+        <img src={OPEN_ISSUES_ICON} alt="open issues" className="stat-icons" />
+        <p className="stat-text">{issuesCount} open issues</p>
       </div>
     </li>
   )
