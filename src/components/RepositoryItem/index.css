@@ -1,0 +1,29 @@
+.repo-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #f8f8ff;
+  border-radius: 10px;
+  min-width: 30%;
+  margin: 10px;
+  padding: 15px;
+}
+
+.icon-and-text-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Roboto';
+}
+
+.icons-size {
+  height: 30px;
+  width: 30px;
+}
+
+.repo-title {
+  font-family: 'Roboto';
+  color: #e73959;
+}

@@ -1,0 +1,43 @@
+.popular-gitrepo-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.list-items {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.main-heading {
+  color: #0f172a;
+  font-family: 'Lobster';
+}
+
+.list-of-repos-item-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  list-style-type: none;
+  padding: 5px;
+  margin: 5px;
+}
+
+@media screen and (mix-width: 767px) {
+  .list-of-repos-item-container {
+    flex-direction: column;
+  }
+}
+
+.failure-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
